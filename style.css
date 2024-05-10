@@ -12,24 +12,28 @@ body {
 .container {
 
   height: 500px;
+  width: 350px;
  /* display:inline-flex; /*se ajusta la ancho de los items*/
   display: flex; /*Se ajusta al espacio disponible, es el más común de usar*/
-  /*flex-direction: row; /*Éste es el valor por default. de izq a der*/
-  flex-direction: row-reverse; /*der a izq*/
+  flex-direction: row; /*Éste es el valor por default. de izq a der*/
+  /*flex-direction: row-reverse; /*der a izq*/
  /* flex-direction: column; /*abajo hacia arriba*/
   /*flex-direction: column-reverse; /*arriba hacia abajo*/
   /*background-color: darkorchid;*/
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
 
   /*justify-content: start; /*. Alinea a la izq*/
   /*justify-content: end; /*alinea a la der*/
-  justify-content: center; /*Alinea al centro*/
+  /*justify-content: center; /*Alinea al centro*/
   /*justify-content: space-around; /*Alinea a espacio al rededor de cada elemento*/
   /*justify-content: space-between; /*Alinea a espacio entre elementos*/
   /*justify-content: space-evenly; /*Alinea a espacio entre elementos y el contenedor*/
 
   /*align-items: flex-start; /*Alinea hacia arriba*/
   /*align-items: flex-end; /*Alinea hacia abajo*/
-  align-items: center;
+  /*align-items: center;
   /*align-items: stretch; /*Crece la altura de los elementos en espacio disponible. Losd ítemno deben tener alto definido*/
   /*align-items: baseline; /*Alinea los itemsen función de la línea base del texto que contienen. Independientemenete del texto, ubicación del contenido y altura del item.*/
 
