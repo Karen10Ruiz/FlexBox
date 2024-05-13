@@ -14,12 +14,37 @@ body {
   background-color: darkorchid;
 }
 
+/*Flex-Shrink -> Esta propiedad funciona como un factor de de contracción, encogimiento, reducción de los elementos del contenedor flex.*/
+
+/*Flex-Shrink recibe factores númericos. 1, 2, 3, 4, 5...*/
 .item {
+flex-basis: 200px;
+flex-grow: 1;
+flex-shrink: 1; /*Valor por default*/
+
   background-color: crimson;
-  width: 100px;
-  height: 100px;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-  padding-top: 32px;
+  border: 1px solid black;
+}
+
+.aplastado1 {
+  flex-shrink: 1;
+  flex-grow: 12;
+}
+
+.aplastado2 {
+  flex-shrink: 2;
+  flex-grow: 9;
+}
+
+.aplastado3 {
+  flex-shrink: 3;
+  flex-grow: 6;
+}
+
+.aplastado4 {
+  flex-shrink: 4;
+  flex-grow: 3;
 }
